@@ -10,6 +10,34 @@ registration:
     - "google"
     - "openid"
 
+
+# Example MCP Servers Object Structure
+mcpServers:
+  everything:
+    type: sse 
+    url: https://n8n.ee/mcp/mcp/sse
+    timeout: 60000  
+#   puppeteer:
+#     type: stdio
+#     command: npx
+#     args:
+#       - -y
+#       - "@modelcontextprotocol/server-puppeteer"
+#     timeout: 300000  # 5 minutes timeout for this server
+#   filesystem:
+#     # type: stdio
+#     command: npx
+#     args:
+#       - -y
+#       - "@modelcontextprotocol/server-filesystem"
+#       - /home/user/LibreChat/
+#     iconPath: /home/user/LibreChat/client/public/assets/logo.svg
+#   mcp-obsidian:
+#     command: npx
+#     args:
+#       - -y
+#       - "mcp-obsidian"
+#       - /path/to/obsidian/vault
 endpoints:
   custom:
     # APIpie
