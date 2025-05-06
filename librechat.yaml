@@ -91,12 +91,14 @@ actions:
 
 # Example MCP Servers Object Structure
 mcpServers:
-  mcp-insly:
+  hubspot:
     # type: sse # type can optionally be omitted
-    url: https://mcp-insly.ando-kivilaid.workers.dev/sse
+    url: https://mcp.pipedream.net/b630e16f-9baa-4d26-ae28-d593b3fd0bbc/hubspot
     timeout: 60000  # 1 minute timeout for this server, this is the default timeout for MCP servers.
-#   puppeteer:
-#     type: stdio
+  google_sheets:
+    type: sse
+    url: https://mcp.pipedream.net/b630e16f-9baa-4d26-ae28-d593b3fd0bbc/google_sheets
+    timeout: 6000
 #     command: npx
 #     args:
 #       - -y
